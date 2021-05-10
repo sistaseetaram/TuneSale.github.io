@@ -91,3 +91,45 @@ p {
     padding-right: 10px;
     padding-left: 10px;
 }
+.col4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col4 img {
+    align-items: flex-end;
+    width: 100%;
+}
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after {
+    content: '';
+    background: #ff4f38;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+.col4 p {
+    font-size: 14px;
+}
+.rating .fa{
+    color: #ff4f38;
+}
+.col4:hover {
+    transform: translateY(-8px);
+}
