@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>TuneSale</title>
+        <title>All Products | TuneSale</title>
         <link rel="shortcut icon" href="images/logosandCover/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -10,54 +10,34 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="header">
-            <div class="container">
-                <div class="navbar">
-                    <div class="logo">
-                        <img src="images/logosandCover/Tune Sale.jpg" alt="TuneSale" width="175px">
-                    </div>
-                    <nav>
-                        <ul id="mi1">
-                            <li><a href="" >Home</a></li>
-                            <li><a href="" >Products</a></li>
-                            <li><a href="" >Account</a></li>
-                            <li><a href="" >About</a></li>
-                        </ul>
-                    </nav>
-                    <img src="images/logosandCover/cart1.png" alt="cart">
-                    <img src="images/logosandCover/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()" /> 
-                </div> 
-                <div class="row">
-                    <div class="col2">
-                        <h1>Make Your Life<br />Euphonic!</h1>
-                        <p>Playing an instrument resembles life: all you have to do is<br /> touch the right key at the right time and the instrument will play itself</p>
-                        <a href="" class="btn">Explore Now &#8594;</a>
-                    </div>
-                    <div class="col2">
-                        <img src="images/logosandCover/c4.jpg" alt="image not found." height="600px">
-                    </div>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logosandCover/Tune Sale.jpg" alt="TuneSale" width="175px">
                 </div>
-            </div>
+                <nav>
+                    <ul id="mi1">
+                        <li><a href="" >Home</a></li>
+                        <li><a href="" >Products</a></li>
+                        <li><a href="" >Account</a></li>
+                        <li><a href="" >About</a></li>
+                    </ul>
+                </nav>
+                <img src="images/logosandCover/cart1.png" alt="cart">
+                <img src="images/logosandCover/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()" /> 
+            </div> 
         </div>
-        <!--Featured Categories-->
-        <div class="categories">
-            <div class="small-container">
-                <div class="row">
-                    <div class="col3">
-                        <img src="images/logosandCover/c1.jpg" alt="image not found.">
-                    </div>
-                    <div class="col3">
-                        <img src="images/logosandCover/c2.jpg" alt="image not found.">
-                    </div>
-                    <div class="col3">
-                        <img src="images/logosandCover/c6.jpg" alt="image not found.">
-                    </div>
-                </div>
-            </div>
-        </div> 
-        <!--Featured Products₹<i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>-->
+
         <div class="small-container">
-            <h2 class="title">Featured Products</h2>
+            <div class="row row2">
+                <h2>All Products</h2>
+                <select>
+                    <option>Default Sort</option>
+                    <option>Sort By Name</option>
+                    <option>Sort By Price</option>
+                    <option>Sort By rating</option>
+                </select>
+            </div>
             <div class="row">
                 <div class="col4">
                     <img src="images/violin/v10.jpg " alt="image not found.">
@@ -107,9 +87,7 @@
                     </div>
                     <p>₹45,500.00</p>
                 </div>
-            </div>
-            <!------Latest Products------>
-            <h2 class="title">Latest Products</h2>
+            </div>  
             <div class="row">
                 <div class="col4">
                     <img src="images/piano/p14.jpg " alt="image not found.">
@@ -210,79 +188,16 @@
                     <p>₹34,940.00</p>
                 </div>
             </div>
+            <div class="page-btn">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>&#8594;</span>
+            </div>
         </div> 
-        <!--Offer -->
-        <div class="offer">
-            <div class="small-container">
-                <div class="row">
-                    <div class="col2">
-                        <img src="images/drums/d9.jpg" alt="image not found." class="offer-img">
-                    </div>
-                    <div class="col2">
-                        <p>Exclusive Offer Available Only On TuneSale!</p>
-                        <h1>Alesis Debut Kit</h1>
-                        <small>Alesis Debut Kit – Kids Drum Set With 4 Mesh Electric Drum Set Pads, 120 Sounds, 60 Melodics Lessons, Drum Stool, Drum Sticks and Headphones</small>
-                        <br/>
-                        <a href="" class="btn">Buy Now &#8594;</a>
-                    </div>
-                </div>
-            </div>      
-        </div>
-        <!--Testimonial-->
-         <div class="testimonial">
-             <div class="small-container">
-                 <div class="row">
-                    <div class="col3">
-                        <i class="fa fa-quote-left"></i>
-                        <p>I ordered an electric guitar from TuneSale and it was perfect.
-                            It was brand new and packed very well.
-                            Everything was included in the box.</p>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <img src="images/reviewdUsers/ru1.jpg" alt="image not found.">
-                        <h3>Abhijit Jain</h3>
-                    </div>
-                    <div class="col3">
-                        <i class="fa fa-quote-left"></i>
-                        <p>Awesome experience during ordering music instrument.
-                            Genuine product and service.
-                            Its amazing place for buying music instrument which I want.
-                            Good product and highly recommended..</p>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <img src="images/reviewdUsers/ru2.jpg" alt="image not found.">
-                        <h3>Zakir Hussain</h3>
-                    </div>
-                    <div class="col3">
-                        <i class="fa fa-quote-left"></i>
-                        <p>The best place for authentic products. Had placed an order for a guitar,
-                            was a bit concerned if the delivery would be safe.
-                            Bajaao didn't disappoint me at all.
-                            There was a bit delay in delivery given the current situation.
-                            The product was heavily packed and and it sounded amazing.</p>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                        </div>
-                        <img src="images/reviewdUsers/ru3.jpg" alt="image not found.">
-                        <h3>Arjit Singh</h3>
-                    </div>
-                 </div>
-             </div>
-         </div>
+
+
         <!-----Footer----->
         <div class="footer">
             <div class="container">
