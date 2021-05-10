@@ -189,11 +189,12 @@
                 </div>
             </div>
             <div class="page-btn">
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>4</span>
-                <span>&#8594;</span>
+                <span id="p0">&#8592;</span>
+                <span id="p1">1</span>
+                <span id="p2">2</span>
+                <span id="p3">3</span>
+                <span id="p4">4</span>
+                <span id="p5">&#8594;</span>
             </div>
         </div> 
 
@@ -217,7 +218,7 @@
                     </div>
                 </div>
                 <hr>
-                <p id="p1">Copyright 2021 &#169;</p>
+                <p id="c1">Copyright 2021 &#169;</p>
             </div>
         </div>
         <!----Script ---->
@@ -232,6 +233,16 @@
                     menuItems.style.maxHeight = "0px";
                 }
             }
+            // For product page 1
+            function pgbtn1() {
+                var pg = document.getElementById("p1");
+                pg.style.background = "#ff4f38";
+                pg.style.color = "#fff";
+            }
+            pgbtn1();
+            document.getElementById("p0").style.background = "#fff";
+            document.getElementById("p0").style.color = "#777";
+            document.getElementById("p0").style.borderColor = "#777";
         </script>
     </body>
 </html>
