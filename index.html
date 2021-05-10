@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" name="viewport" >
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TuneSale</title>
         <link rel="shortcut icon" href="images/logosandCover/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="style.css">
@@ -17,14 +17,15 @@
                         <img src="images/logosandCover/Tune Sale.jpg" alt="TuneSale" width="175px">
                     </div>
                     <nav>
-                        <ul>
-                        <li><a href="" >Home</a></li>
-                        <li><a href="" >Products</a></li>
-                        <li><a href="" >Account</a></li>
-                        <li><a href="" >About</a></li>
+                        <ul id="mi1">
+                            <li><a href="" >Home</a></li>
+                            <li><a href="" >Products</a></li>
+                            <li><a href="" >Account</a></li>
+                            <li><a href="" >About</a></li>
                         </ul>
                     </nav>
                     <img src="images/logosandCover/cart1.png" alt="cart">
+                    <img src="images/logosandCover/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()" /> 
                 </div> 
                 <div class="row">
                     <div class="col2">
@@ -300,5 +301,18 @@
                 <p id="p1">Copyright 2021 &#169;</p>
             </div>
         </div>
+        <!----Script ---->
+        <script>
+            var menuItems = document.getElementById("mi1");
+            menuItems.style.maxHeight = "0px";
+            function menutoggle() {
+                if(menuItems.style.maxHeight == "0px") {
+                    menuItems.style.maxHeight = "200px";
+                }
+                else {
+                    menuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
     </body>
 </html>
