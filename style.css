@@ -74,3 +74,20 @@ p {
     margin-top: 100px;
     padding-bottom: 100px;
 }
+.categories {
+    margin: 70px 0;
+}
+.col3 {
+    flex-basis: 30px;
+    min-width: 300px;
+    margin-bottom: 30px;
+}
+.col3 img {
+    width: 110%;
+}
+.small-container {
+    max-width: 1180px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
