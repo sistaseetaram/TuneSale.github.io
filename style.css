@@ -262,6 +262,16 @@ ul {
     .col2, .col3, .col4 {
         flex-basis: 100%;
     }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col2 {
+        padding: 20px 0;
+    } 
+    .single-product h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
 }
 
 /* -----All Products----- */
@@ -295,4 +305,31 @@ select:focus {
 .page-btn span:hover {
     background: #ff4f38;
     color: #fff;
+}
+/* ---Single Product Details---- */
+.single-product {
+    margin-top: 80px;
+}
+.single-product .col2 img{
+    padding: 0;
+}
+.single-product .col2 {
+    padding: 20px;
+}
+.single-product h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product .fa {
+    color: #ff4f38;
+    margin-left: 10px;
+}
+.small-img-row {
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
 }
