@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Products | TuneSale</title>
+        <link rel="shortcut icon" href="images/logosandCover/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logosandCover/Tune Sale.jpg" alt="TuneSale" width="175px">
+                </div>
+                <nav>
+                    <ul id="mi1">
+                        <li><a href="" >Home</a></li>
+                        <li><a href="" >Products</a></li>
+                        <li><a href="" >Account</a></li>
+                        <li><a href="" >About</a></li>
+                    </ul>
+                </nav>
+                <img src="images/logosandCover/cart1.png" alt="cart">
+                <img src="images/logosandCover/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()" /> 
+            </div> 
+        </div>
+        
+        <!-----Cart items details------>
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="images/flute/f1.jpeg" alt="image not found" >
+                            <div>
+                                <p>KADENCE Plated Flute</p>
+                                <small>₹545425</small><br />
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>₹545425</td>
+                </tr>
+            </table>
+
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>₹545425</td>
+                    </tr>
+                    <tr>
+                        <td>GST</td>
+                        <td>₹5.5</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery</td>
+                        <td>₹545</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>₹545925.5</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-----Footer----->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col1">
+                        <img src="images/logosandCover/f1.png" alt="">
+                        <p>Our Purpose Is To Sustainably Make The Pleasure And
+                            Soothness Of Instrumental Music Accessible To Many.</p>
+                    </div>
+                    <div class="footer-col2">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Follw Me</li>
+                            <li>Return Policy</li>
+                            <li>Feedback</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p id="c1">Copyright 2021 &#169;</p>
+            </div>
+        </div>
+        <!----Script ---->
+        <script>
+            var menuItems = document.getElementById("mi1");
+            menuItems.style.maxHeight = "0px";
+            function menutoggle() {
+                if(menuItems.style.maxHeight == "0px") {
+                    menuItems.style.maxHeight = "200px";
+                }
+                else {
+                    menuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+</html>
